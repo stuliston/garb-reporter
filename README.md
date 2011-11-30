@@ -1,17 +1,14 @@
 Garb-Reporter
-=============
 
 	https://github.com/stuliston/garb-reporter
 
 Description
------------
 
 	Small wrapper to compliment the excellent Garb gem (http://github.com/vigetlabs/garb). 
 	Please have a glance over their documentation as it covers some imprtant Google Analytics
 	stuff too.
 
 Background
-----------
 
 	Traditionally with Garb, you'll create a class for every report that you want. So a report that pulls back
 	visits might look like this:
@@ -40,7 +37,6 @@ Background
   utilising a common querying API (like a poor man's ActiveRecord API, if you will).
 
 Usage
------
 
 	So, when you have garb-reporter in your project, you no longer have to create those classes 
 	(Visits or VisitsAndPageViews above) up-front.
@@ -75,17 +71,14 @@ Usage
 
  
 TODOS
------
 
 	* Integrate passing-through additional options to Garb
 
 Run-time Requirements
----------------------
 
   * Garb (tested against version 0.9.1)
 
 Requirements for Testing
-------------------------
 
   * rspec
   * i18n
@@ -93,12 +86,10 @@ Requirements for Testing
   * fakeweb
 
 Install
--------
 
     gem install garb-reporter OR with bundler: gem 'garb-reporter' and `bundle install`
 
 Contributors
-------------
 
 	* Stu Liston (https://twitter.com/stuliston)
 	* Eric Harrison (https://twitter.com/gzminiz)
