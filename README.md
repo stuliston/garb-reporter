@@ -13,19 +13,19 @@ Background
 	Traditionally with Garb, you'll create a class for every report that you want. So a report that pulls back
 	visits might look like this:
 
-    class Visits
-      extend Garb::Model
+		class Visits
+			extend Garb::Model
 
-      metrics :visits
-    end
+			metrics :visits
+		end
 
   and one that gets visits and page view might look like this:
 
-  	class VisitsAndPageViews
-      extend Garb::Model
+		class VisitsAndPageViews
+			extend Garb::Model
 
-      metrics :visits, :pageviews
-    end
+			metrics :visits, :pageviews
+		end
 
   The you would use the report classes like this:
 
