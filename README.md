@@ -100,10 +100,10 @@ Install
 Contributors
 ------------
 
-	* Stu Liston (https://twitter.com/stuliston)
-  * Eric Harrison (https://twitter.com/gzminiz)
+	* [Stu Liston](https://twitter.com/stuliston)
+	* [Eric Harrison](https://twitter.com/gzminiz)
 
-  Thanks especially to the Garb core contributors. This tiny gem relies heavily on the great work they've produced
+Thanks especially to the Garb core contributors. This tiny gem relies heavily on the great work they've produced
 
 License
 -------
