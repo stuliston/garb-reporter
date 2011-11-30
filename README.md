@@ -20,7 +20,7 @@ Background
 		metrics :visits
 	end
 
-  and one that gets visits and page view might look like this:
+  and one that gets visits and page views might look like this:
 
 	class VisitsAndPageViews
 		extend Garb::Model
