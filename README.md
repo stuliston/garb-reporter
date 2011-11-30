@@ -4,14 +4,14 @@ Garb-Reporter
 
 Description
 
-	Small wrapper to compliment the excellent Garb gem (http://github.com/vigetlabs/garb). 
-	Please have a glance over their documentation as it covers some imprtant Google Analytics
-	stuff too.
+ Small wrapper to compliment the excellent Garb gem (http://github.com/vigetlabs/garb). 
+ Please have a glance over their documentation as it covers some imprtant Google Analytics
+ stuff too.
 
 Background
 
-	Traditionally with Garb, you'll create a class for every report that you want. So a report that pulls back
-	visits might look like this:
+  Traditionally with Garb, you'll create a class for every report that you want. So a report that pulls back
+  visits might look like this:
 
 		class Visits
 			extend Garb::Model
