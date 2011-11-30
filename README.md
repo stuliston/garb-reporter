@@ -4,9 +4,7 @@ Garb-Reporter
 
 Description
 
-	Small wrapper to compliment the excellent Garb gem (http://github.com/vigetlabs/garb). 
-	Please have a glance over their documentation as it covers some imprtant Google Analytics
-	stuff too.
+  Small wrapper to compliment the excellent Garb gem (http://github.com/vigetlabs/garb). Please have a glance over their documentation as it covers some imprtant Google Analytics stuff too.
 
 Background
 
