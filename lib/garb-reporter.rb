@@ -1,4 +1,5 @@
 require "garb-reporter/version"
+require "garb"
 
 module GarbReporter
 

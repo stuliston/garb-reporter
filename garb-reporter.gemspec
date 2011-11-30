@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = GarbReporter::VERSION
   s.authors     = ["Stu Liston"]
   s.email       = ["stuart.liston@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = %q{https://github.com/stuliston/garb-reporter}
   s.summary     = %q{Pimps out Garb by providing a report class with a standardised querying API}
   s.description = %q{GarbReporter removes the need in Garb to create a new class for every report by offering a querying api that dynamically creates the Garb classes for you at runtime.}
 
