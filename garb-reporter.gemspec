@@ -5,14 +5,14 @@ require "garb-reporter/version"
 Gem::Specification.new do |s|
   s.name        = "garb-reporter"
   s.version     = GarbReporter::VERSION
-  s.authors     = ["Stuart Liston"]
+  s.authors     = ["Stu Liston"]
   s.email       = ["stuart.liston@gmail.com"]
   s.homepage    = ""
   s.summary     = %q{Provides a reporter class for Garb}
   s.description = %q{GarbReporter removes the need in Garb to create a new class for every report by offering a querying api that dynamically creates the Garb classes for you in the background.}
 
   # Only running dependency is Garb (and its dependencies)
-  s.add_dependency "garb", ">= 0.9.1"
+  s.add_dependency "garb", "0.9.1"
 
   # Development dependencies:
   s.add_development_dependency "rspec", ">= 2.7.0"
