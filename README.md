@@ -75,19 +75,20 @@ Usage
 TODOS
 -----
 
-	* Integrate passing-through additional options to Garb
+  * Integrate passing-through additional options to Garb
 
 Run-time Requirements
+---------------------
 
-	* Garb (tested against version 0.9.1)
+  * Garb (tested against version 0.9.1)
 
 Requirements for Testing
 ------------------------
 
-	* rspec
-	* i18n
-	* vcr
-	* fakeweb
+  * rspec
+  * i18n
+  * vcr
+  * fakeweb
 
 Install
 -------
