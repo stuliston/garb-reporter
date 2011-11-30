@@ -82,6 +82,31 @@ describe GarbReporter do
   	it 'should extract multiple dimensions' do
   		@report.send(:extract_dimensions, 'visits_by_date_and_office').should == [:date, :office]
   	end
+  end
+
+  describe 'build_new_report_class' do
+
+    before do
+      @klass = @report.send(:build_new_report_class, 'visits_by_date', 'VisitsByDate')
+    end
+
+    it 'it adds the class so the GarbReporter module' do
+      @klass.to_s.should == 'GarbReporter::VisitsByDate'
+    end
+
+    it 'should give the new class the public "results" method from Garb::Model module' do
+      @klass.respond_to?(:results, false).should be_true
+    end
+
+    it 'should apply the correct metrics' do
+      report_params = @klass.instance_variable_get(:@metrics)
+      report_params.instance_variable_get(:@elements).should == [ :visits ]
+    end
+
+    it 'should apply the correct dimensions' do
+      report_params = @klass.instance_variable_get(:@dimensions)
+      report_params.instance_variable_get(:@elements).should == [ :date ]
+    end
 
   end
 
