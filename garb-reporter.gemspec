@@ -11,6 +11,12 @@ Gem::Specification.new do |s|
   s.summary     = %q{Provides a reporter class for Garb}
   s.description = %q{GarbReporter removes the need in Garb to create a new class for every report by offering a querying api that dynamically creates the Garb classes for you in the background.}
 
+  # Only running dependency is Garb (and its dependencies)
+  s.add_dependency "garb", ">= 0.9.1"
+
+  # Development dependencies:
+  s.add_development_dependency "rspec", ">= 2.7.0"
+
   s.rubyforge_project = "garb-reporter"
 
   s.files         = `git ls-files`.split("\n")
