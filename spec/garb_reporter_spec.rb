@@ -24,7 +24,7 @@ describe GarbReporter do
   	end
 
 		it 'should strip out underscores' do
-  		@report.send(:build_class_name, 'visits_by_office').should == 'VisitsByOffice'
+  		@report.send(:build_class_name, 'visits_by_office').should_not match(/_/)
   	end
 
   	it 'should handle really long strings' do
