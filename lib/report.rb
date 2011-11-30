@@ -35,7 +35,7 @@ module GarbReporter
 		end
 
 		def build_new_report_class(method_name, class_name)
-			klass = GarbReporter.const_set(class_name, Class.new(GarbReporter::BaseGarbReport))
+			klass = GarbReporter.const_set(class_name, Class.new())
 			klass.extend Garb::Model
 			klass.metrics << extract_metrics(method_name)
 			klass.dimensions << extract_dimensions(method_name)
