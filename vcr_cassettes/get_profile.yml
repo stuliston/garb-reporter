@@ -1,0 +1,40 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: https://www.google.com:443/analytics/feeds/datasources/ga/accounts/~all/webproperties/~all/profiles
+    body: 
+    headers: 
+      authorization: 
+      - GoogleLogin auth=DQAAAMIAAAB-o-KXnRZiasADsE59dnSkvovrXlY0htPFyvyeGZKIKumNGpatwtMVTogWlnGlRa29p1ILfFYTDmueKnj9Ds2SOVu0tx670XjlgrRvtbia1MJ7p0M4uB5aJr4UMqqrkMF4dsnA28Les-plij6icPJq9OxCwQ2og_1q3bCjs-wkC6CN9lEBvQPeLj5ipIiCNM8fap03Qxfj7-0vTVFt4nP-kpYuIpILZja05N0am1_EAItaUOXWzcjPe_tDqSkXGN_5Mm46v7Qs2dR35ssEitsT
+      gdata-version: 
+      - "2"
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-frame-options: 
+      - SAMEORIGIN
+      x-content-type-options: 
+      - nosniff
+      last-modified: 
+      - Wed, 30 Nov 2011 02:58:25 GMT
+      expires: 
+      - Wed, 30 Nov 2011 02:58:25 GMT
+      content-type: 
+      - application/atom+xml; charset=UTF-8; type=feed
+      server: 
+      - GSE
+      x-xss-protection: 
+      - 1; mode=block
+      date: 
+      - Wed, 30 Nov 2011 02:58:25 GMT
+      gdata-version: 
+      - "2.1"
+      vary: 
+      - Accept, X-GData-Authorization, GData-Version
+      cache-control: 
+      - private, max-age=0, must-revalidate, no-transform
+    body: <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:dxp="http://schemas.google.com/analytics/2009" xmlns:openSearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:gd="http://schemas.google.com/g/2005" gd:kind="analytics#profiles">  <id>https://www.google.com/analytics/feeds/datasources/ga/accounts/~all/webproperties/~all/profiles</id>  <updated>2011-11-30T02:58:25.381Z</updated> <title>Google Analytics Profiles for stuart@example.com</title> <link rel="self" type="application/atom+xml" href="https://www.google.com/analytics/feeds/datasources/ga/accounts/~all/webproperties/~all/profiles"/> <author>    <name>Google Analytics</name> </author> <generator version="1.0">Google Analytics</generator> <openSearch:totalResults>53</openSearch:totalResults> <openSearch:startIndex>1</openSearch:startIndex>  <openSearch:itemsPerPage>1000</openSearch:itemsPerPage> <entry gd:etag="W/&quot;C0cHSXw7fSp7I2A9WhRREUw.&quot;" gd:kind="analytics#profile">    <id>https://www.google.com/analytics/feeds/datasources/ga/accounts/12345678/webproperties/UA-12345678-1/profiles/67976579</id>    <updated>2011-11-23T21:03:58.205-08:00</updated>    <title>Google Analytics Profile TEST</title>    <link rel="self" type="application/atom+xml" href="https://www.google.com/analytics/feeds/datasources/ga/accounts/12345678/webproperties/UA-12345678-1/profiles/67976579"/>   <link rel="http://schemas.google.com/ga/2009#parent" type="application/atom+xml" href="https://www.google.com/analytics/feeds/datasources/ga/accounts/12345678/webproperties/UA-12345678-1" gd:targetKind="analytics#webproperty"/>   <link rel="http://schemas.google.com/ga/2009#child" type="application/atom+xml" href="https://www.google.com/analytics/feeds/datasources/ga/accounts/12345678/webproperties/UA-12345678-1/profiles/67976579/goals" gd:targetKind="analytics#goals"/>    <dxp:property name="ga:accountId" value="12345678"/>    <dxp:property name="ga:webPropertyId" value="UA-12345678-1"/>   <dxp:property name="ga:profileName" value="CAV UAT"/>   <dxp:property name="ga:profileId" value="67976579"/>    <dxp:property name="dxp:tableId" value="ga:67976579"/>    <dxp:property name="ga:currency" value="USD"/>    <dxp:property name="ga:timezone" value="America/Los_Angeles"/>  </entry></feed>
+    http_version: "1.1"

@@ -1,0 +1,38 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :post
+    uri: https://www.google.com:443/accounts/ClientLogin
+    body: Passwd=password&service=analytics&accountType=HOSTED_OR_GOOGLE&Email=stuart%40example.com&source=vigetLabs-garb-001
+    headers: 
+      content-type: 
+      - application/x-www-form-urlencoded
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-content-type-options: 
+      - nosniff
+      expires: 
+      - Mon, 01-Jan-1990 00:00:00 GMT
+      content-type: 
+      - text/plain
+      server: 
+      - GSE
+      x-xss-protection: 
+      - 1; mode=block
+      date: 
+      - Wed, 30 Nov 2011 02:58:23 GMT
+      content-length: 
+      - "881"
+      cache-control: 
+      - no-cache, no-store
+      pragma: 
+      - no-cache
+    body: |
+      SID=DQAAAMEAAABEPGo2a2ewm6JsKoF18TB1W4NzG21XMZZoX4uS44RP0BhBnP7daTnL3ZPtLO8fgEr-Ym-nF5OByN29mkdOSdFBA90zSMSlGedGyzryY_NC93C3zMFRe0Sa8ia-snWqbp7U_ja4u7v6mC7t4We_eyGRujR3tRJeCJURzYmcFLJtAuNPmkNWA8sZ1g-libvB6Y9Q_iSVyKWVU1te0vVBOamN1HPQizwDcNpEX4nKACiuHyt-Uj1fn1kTnS4HDbNirlQy2yjlt2klvnzy5GMPVkZN
+      LSID=DQAAAMIAAAB-o-KXnRZiasADsE59dnSkvovrXlY0htPFyvyeGZKIKumNGpatwtMVTogWlnGlRa0uZP4C3yyyOIXizXaogiYKlwKo3kEj7eo0QtnWjwXurwktNrfqUtdcoxjl8UkV_cIJl77aFcg5J5aQUJgv7d96jriTI5JB1W6krd3RjhqyjYICp5abqrMKASsUqjOaCBxI__5WvH4DYGQD4n64BrdCUUMFaGXOFDnpiPATWM9YvjQf7qDt0q_UkQify2tvlIJl70gvA-5dV-Ps1agz7Fpp
+      Auth=DQAAAMIAAAB-o-KXnRZiasADsE59dnSkvovrXlY0htPFyvyeGZKIKumNGpatwtMVTogWlnGlRa29p1ILfFYTDmueKnj9Ds2SOVu0tx670XjlgrRvtbia1MJ7p0M4uB5aJr4UMqqrkMF4dsnA28Les-plij6icPJq9OxCwQ2og_1q3bCjs-wkC6CN9lEBvQPeLj5ipIiCNM8fap03Qxfj7-0vTVFt4nP-kpYuIpILZja05N0am1_EAItaUOXWzcjPe_tDqSkXGN_5Mm46v7Qs2dR35ssEitsT
+
+    http_version: "1.1"

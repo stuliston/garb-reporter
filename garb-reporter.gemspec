@@ -16,6 +16,9 @@ Gem::Specification.new do |s|
 
   # Development dependencies:
   s.add_development_dependency "rspec", ">= 2.7.0"
+  s.add_development_dependency "i18n"
+  s.add_development_dependency "vcr"
+  s.add_development_dependency "fakeweb"
 
   s.rubyforge_project = "garb-reporter"
 
