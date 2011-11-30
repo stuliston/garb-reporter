@@ -1,12 +1,15 @@
 Garb-Reporter
+-------------
 
 	https://github.com/stuliston/garb-reporter
 
 Description
+-----------
 
   Small wrapper to compliment the excellent Garb gem (http://github.com/vigetlabs/garb). Please have a glance over their documentation as it covers some imprtant Google Analytics stuff too.
 
 Background
+----------
 
   Traditionally with Garb, you'll create a class for every report that you want. So a report that pulls back
   visits might look like this:
@@ -35,11 +38,12 @@ Background
   utilising a common querying API (like a poor man's ActiveRecord API, if you will).
 
 Usage
+-----
 
-	So, when you have garb-reporter in your project, you no longer have to create those classes 
-	(Visits or VisitsAndPageViews above) up-front.
+  So, when you have garb-reporter in your project, you no longer have to create those classes 
+  (Visits or VisitsAndPageViews above) up-front.
 
-	The authentication and profile retrieval steps remain the same:
+  The authentication and profile retrieval steps remain the same:
 
 		> Garb::Session.login(username, password) # this is only one option, please see Garb docs
   	> profile = Garb::Management::Profile.all.detect {|p| p.web_property_id == 'UA-XXXXXXX-X'}
@@ -69,30 +73,34 @@ Usage
 
  
 TODOS
+-----
 
 	* Integrate passing-through additional options to Garb
 
 Run-time Requirements
 
-  * Garb (tested against version 0.9.1)
+	* Garb (tested against version 0.9.1)
 
 Requirements for Testing
+------------------------
 
-  * rspec
-  * i18n
-  * vcr
-  * fakeweb
+	* rspec
+	* i18n
+	* vcr
+	* fakeweb
 
 Install
+-------
 
     gem install garb-reporter OR with bundler: gem 'garb-reporter' and `bundle install`
 
 Contributors
+------------
 
-	* Stu Liston (https://twitter.com/stuliston)
-	* Eric Harrison (https://twitter.com/gzminiz)
+  * Stu Liston (https://twitter.com/stuliston)
+  * Eric Harrison (https://twitter.com/gzminiz)
 
-Thanks especially to the Garb core contributors. This tiny gem relies heavily on the great work they've produced
+  Thanks especially to the Garb core contributors. This tiny gem relies heavily on the great work they've produced
 
 License
 -------
