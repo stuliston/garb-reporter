@@ -45,8 +45,8 @@ Usage
 
   The authentication and profile retrieval steps remain the same:
 
-		> Garb::Session.login(username, password) # this is only one option, please see Garb docs
-  	> profile = Garb::Management::Profile.all.detect {|p| p.web_property_id == 'UA-XXXXXXX-X'}
+    > Garb::Session.login(username, password) # this is only one option, please see Garb docs
+    > profile = Garb::Management::Profile.all.detect {|p| p.web_property_id == 'UA-XXXXXXX-X'}
 
   But thereafter we just have to create a GarbReporter::Report instance with the profile:
 
