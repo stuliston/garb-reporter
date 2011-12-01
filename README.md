@@ -71,6 +71,14 @@ Usage
 
   you should be laughing.
 
+  __As of version 0.0.4__, you can also pass through the other parameters as per the Garb docs:
+
+  * start_date: The date of the period you would like this report to start
+  * end_date: The date to end, inclusive
+  * limit: The maximum number of results to be returned
+  * offset: The starting index
+  * filters: (see Garb docs)
+
  
 TODOS
 -----
