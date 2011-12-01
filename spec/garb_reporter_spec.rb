@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe GarbReporter do
   
-  before do
+  before(:all) do
 
   	# get VCR to serve us up a previously-canned http response for successful login
   	VCR.use_cassette('garb authentication') do
@@ -86,11 +86,11 @@ describe GarbReporter do
 
   describe 'build_new_report_class' do
 
-    before do
+    before(:all) do
       @klass = @report.send(:build_new_report_class, 'visits_by_date', 'VisitsByDate')
     end
 
-    it 'it adds the class so the GarbReporter module' do
+    it 'adds the class so the GarbReporter module' do
       @klass.to_s.should == 'GarbReporter::VisitsByDate'
     end
 
@@ -107,7 +107,24 @@ describe GarbReporter do
       report_params = @klass.instance_variable_get(:@dimensions)
       report_params.instance_variable_get(:@elements).should == [ :date ]
     end
-
   end
 
+  describe 'passing additional parameters to Garb' do
+
+    before(:all) do
+      @klass = GarbReporter.const_set('Exits', Class.new())
+      @stubbed_report = GarbReporter::Report.new(@profile)
+      @stubbed_report.stub!(:existing_report_class).and_return(@klass)
+    end
+
+    it 'should pass no args when none are provided' do
+      @klass.should_receive(:results).once.with(@profile)
+      @stubbed_report.exits()
+    end
+
+    it 'should pass start and end dates when provided' do
+      @klass.should_receive(:results).with(@profile, :start_date => '2011-01-01', :end_date => '2011-12-31')
+      @stubbed_report.exits(:start_date => '2011-01-01', :end_date => '2011-12-31')
+    end
+  end
 end

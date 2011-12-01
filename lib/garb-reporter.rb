@@ -10,13 +10,13 @@ module GarbReporter
 		end
 
 		def method_missing(method, *args)
-			
 			method_name = method.to_s
+
 			super unless valid_method_name?(method_name)
 
 			class_name = build_class_name(method_name)
 			klass = existing_report_class(class_name) || build_new_report_class(method_name, class_name)
-			klass.results(@profile)
+			klass.results(@profile, *args)
 		end
 
 		private

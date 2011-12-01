@@ -1,6 +1,6 @@
 require "config/vcr_setup"
 require "garb"
-require "report"
+require "garb-reporter"
 
 RSpec.configure do |config|
   # some (optional) config here
