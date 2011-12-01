@@ -75,7 +75,6 @@ Usage
 TODOS
 -----
 
-  * Integrate passing-through additional options to Garb
   * Implement respond_to on Report class to clean up validation
 
 Run-time Requirements
